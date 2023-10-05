@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background-color: #000000;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #0099ff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0px 20px 0px;
+    font-weight: 900;
+}
+
+footer {
+    background-color: #0731edd4;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 250px);
+    grid-template-areas: 
+        "foto-1 foto-1 foto-3 foto-2"
+        "foto-1 foto-1 foto-3 foto-2"
+        "foto-4 foto-5 foto-6 foto-9"
+        "foto-4 foto-7 foto-8 foto-9"
+    ;
+    grid-gap: 20px;
+}
+
+.grid-container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.foto-1 {
+    grid-area: foto-1;
+}
+
+.foto-2 {
+    grid-area: foto-2;
+}
+
+.foto-3 {
+    grid-area: foto-3;
+}
+
+.foto-4 {
+    grid-area: foto-4;
+}
+
+.foto-5 {
+    grid-area: foto-5;
+}
+
+.foto-6 {
+    grid-area: foto-6;
+}
+
+.foto-7 {
+    grid-area: foto-7;
+}
+
+.foto-8 {
+    grid-area: foto-8;
+}
+
+.foto-9 {
+    grid-area: foto-9;
+}
+
+.logo-2 {
+    width: 150px;
+    border: 4px solid #F2E6DC;
+    margin: 15px;
+}
+
+.text-footer, h3 {
+    font-family: 'Montserrat regular', sans-serif;
+    color: #F2E6DC;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@media (max-width: 800px)  {
+    .grid-container {
+        grid-template-areas: 
+            "foto-1 foto-1 foto-2 foto-2"
+            "foto-1 foto-1 foto-3 foto-3"
+            "foto-4 foto-5 foto-5 foto-6"
+            "foto-7 foto-8 foto-9 foto-9"
+        ;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "foto-1"
+        "foto-2"
+        "foto-3"
+        "foto-4"
+        "foto-5"
+        "foto-6"
+        "foto-7"
+        "foto-8"
+        "foto-9"
+        ;
+    }
+
+}
+
+
