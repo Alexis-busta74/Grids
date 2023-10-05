@@ -102,6 +102,12 @@ footer {
 
 
 @media (max-width: 800px)  {
+    footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
     .grid-container {
         grid-template-areas: 
             "foto-1 foto-1 foto-2 foto-2"
@@ -125,6 +131,10 @@ footer {
         ;
     }
 
+    .text-footer, h3 {
+        margin-left: 50px;
+    }
+    
 }
 
 
